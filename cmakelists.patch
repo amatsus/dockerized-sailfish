@@ -1,0 +1,23 @@
+diff -ur sailfish-0.6.3.orig/CMakeLists.txt sailfish-0.6.3/CMakeLists.txt
+--- sailfish-0.6.3.orig/CMakeLists.txt	2014-03-07 21:21:34.000000000 +0000
++++ sailfish-0.6.3/CMakeLists.txt	2016-04-02 11:37:11.023944554 +0000
+@@ -122,6 +122,7 @@
+         URL http://www.cs.cmu.edu/~robp/files/boost-1.53.0.tar.gz
+         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/boost_1_53_0
+         INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/install
++        PATCH_COMMAND patch -p2 -d ${CMAKE_CURRENT_SOURCE_DIR}/external/boost_1_53_0/ < ${CMAKE_CURRENT_SOURCE_DIR}/boost-cstdint.patch
+         CONFIGURE_COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/external/boost_1_53_0/bootstrap.sh ${BOOST_CONFIGURE_TOOLSET} --prefix=<INSTALL_DIR>
+         BUILD_COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/external/boost_1_53_0/b2 ${BOOST_EXTRA_FLAGS} install
+         BUILD_IN_SOURCE 1
+diff -ur sailfish-0.6.3.orig/src/CMakeLists.txt sailfish-0.6.3/src/CMakeLists.txt
+--- sailfish-0.6.3.orig/src/CMakeLists.txt	2014-03-07 21:21:34.000000000 +0000
++++ sailfish-0.6.3/src/CMakeLists.txt	2016-04-02 11:35:56.194772855 +0000
+@@ -48,7 +48,7 @@
+ )
+ 
+ if(HAVE_LOGGER)
+-    set (LOGGING_LIBS lib_g2logger lib_activeobject)
++    set (LOGGING_LIBS lib_g2logger)
+ else()
+     set (LOGGING_LIBS )
+ endif()
