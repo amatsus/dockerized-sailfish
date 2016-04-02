@@ -1,5 +1,5 @@
 # Dockerized Sailfish
-[![](https://badge.imagelayers.io/amatsus/sailfish:0.6.3.svg)](https://imagelayers.io/?images=amatsus/sailfish:0.6.3 'Get your own badge on imagelayers.io') [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+[![](https://badge.imagelayers.io/amatsus/sailfish:latest.svg)](https://imagelayers.io/?images=amatsus/sailfish:latest 'Get your own badge on imagelayers.io') [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Usage
 
