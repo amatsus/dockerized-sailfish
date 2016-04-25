@@ -1,5 +1,5 @@
 # Dockerized Sailfish
-[![](https://imagelayers.io/badge/amatsus/sailfish:latest.svg)](https://imagelayers.io/?images=amatsus/sailfish:latest 'Get your own badge on imagelayers.io') [![GPLv3 License](http://img.shields.io/badge/license-GPL_v3-blue.svg?style=flat)](LICENSE)
+[![](http://imagelayers.io/badge/amatsus/sailfish:latest.svg)](https://imagelayers.io/?images=amatsus/sailfish:latest 'Get your own badge on imagelayers.io') [![GPLv3 License](http://img.shields.io/badge/license-GPL_v3-blue.svg?style=flat)](LICENSE) [![Docker Pulls](http://img.shields.io/docker/pulls/amatsus/sailfish.svg)]()
 
 ## Usage
 
